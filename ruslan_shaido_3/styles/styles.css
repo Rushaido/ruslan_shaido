@@ -1,0 +1,163 @@
+h1{
+    color: red;
+    max-width: 1334px;
+    margin: 0 auto 100px;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__nav {
+  display: flex;
+  gap: 30px;
+}
+
+.page-header__nav-link {
+  text-decoration: none;
+  color:black;
+}
+
+.page-header__user-link {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.home {
+  max-width: 1334px;
+  margin: 0 auto;
+}
+
+.main-header {
+  max-width: 1334px;
+  margin: 0 auto 80px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.main-header_title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.main-header_text {
+  max-width: 667px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.offers {
+  max-width: 1334px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.offers__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.offers__btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.offers__btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn--red {
+  background-color: red;
+  color: white;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+}
+
+.about {
+  max-width: 1334px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.about__section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.upcoming {
+  max-width: 1334px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.upcoming__section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.listing {
+  max-width: 1334px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.listing__section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.contacts {
+  max-width: 1334px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.contacts__section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.page-footer {
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.txt {
+  line-height: 2;
+}
