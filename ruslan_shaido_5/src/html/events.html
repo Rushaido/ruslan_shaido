@@ -1,0 +1,39 @@
+<!-- Раздел блога -->
+<section class="listing">
+  <h2 class="listing__title section-title">Блог</h2>
+
+  <div class="listing__article-list">
+    <!-- prettier-ignore -->
+    @@loop('blocks/article-card.html', [
+      {
+        "class": "listing__article-card",
+        "img": "assets/images/blog/theatre.jpg",
+        "alt": "Theatre Photosession",
+        "title": "Фотосессия в стенах Театра драмы",
+        "descr": "Организовывая фотосессию для Европейского культурного центра в здании бывшего Театра драмы...",
+        "time": "26.11.2021",
+        "datetime": "2021-11-26T00:00"
+      },
+      {
+        "class": "listing__article-card",
+        "img": "assets/images/blog/concert.jpg",
+        "alt": "Concert Performance",
+        "title": "Выставка VR в Томске",
+        "descr": "Ключевые технологии в партнерстве с командой томского музея...",
+        "time": "15.11.2021",
+        "datetime": "2021-11-15T00:00"
+      },
+      {
+        "class": "listing__article-card",
+        "img": "assets/images/blog/guitar.jpg",
+        "alt": "Guitar Workshop",
+        "title": "Мастер-класс по игре на гитаре",
+        "descr": "Освоите технику игры и аккорды под руководством опытных музыкантов...",
+        "time": "05.10.2021",
+        "datetime": "2021-10-05T00:00"
+      }
+    ])
+  </div>
+
+  <a href="#" class="listing__link link">Смотреть все</a>
+</section>
