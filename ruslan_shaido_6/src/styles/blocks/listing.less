@@ -1,0 +1,32 @@
+
+.listing{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1414px;
+  
+  
+    &__section-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    }
+    &__event-card{
+    margin-right: 58px;
+    }
+    &__event-card:nth-child(3n){
+    margin-right: 0;
+    }
+    &__event-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 60px;
+    }
+    &__event-card{
+    width: calc(33.333% - 40px)
+    }
+}

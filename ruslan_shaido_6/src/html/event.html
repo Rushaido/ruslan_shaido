@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  @@include('blocks/head.html')
+
+  <body class="body">
+    @@include('blocks/page-header.html')
+
+    	
+    <main class="main">
+
+      <article class="event">
+
+        <div class="event__content" content>
+          <h5>Программа мероприятия</h5>
+          <ul>
+              <li>20:15 – Приветствие гостей</li>
+              <li>20:30 – Первая подача блюд | Салаты</li>
+              <li>20:40 – Живой вокал | Композиции 1-3</li>
+              <li>21:20 – Подача горячих блюд</li>
+              <li>21:30 – Живой вокал | Композиции 4-7</li>
+              <li>22:15 – Подача десерта</li>
+              <li>22:30 – Живой вокал | Композиции 8-9</li>
+              <li>23:00 – Завершение вечера</li>
+          </ul>
+          <h5>The Best Of Sade</h5>
+        </div>
+        <p>
+              Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
+              включая самые популярные хиты группы, раритеты и их любимые треки.
+        </p>
+        <p>
+          Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+          Она лидировала музыкальных чартах с 1994 по 1995 год,
+          став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+        </p>
+
+        <ol>
+          <li>Your Love Is King</li>
+          <li>Hang On To Your Love</li>
+          <li>Smooth Operator</li>
+          <li>Jezebel</li>
+          <li>The Sweetest Taboo</li>
+          <li>Is It A Crime</li>
+          <li>Never As Good As The First Time</li>
+          <li>Love Is Stronger Than Pride</li>
+          <li>Paradise</li>
+        </ol>
+
+       <form class="reserve event__reserve">
+        <div class="reserve__header">
+          <h3 class="reserve__title">Забронировать столик</h3>
+        </div>
+        
+        <div class="reserve__scheme-wrapper">
+          <div class="reserve__scheme">
+            <div class="reserve__scheme-diagram">
+              <!-- Левая колонка столов -->
+              <div class="reserve__tables-left">
+                <div class="reserve__table" data-table="1">1 стол</div>
+                <div class="reserve__table" data-table="2">2 стол</div>
+                <div class="reserve__table" data-table="3">3 стол</div>
+                <div class="reserve__table" data-table="4">4 стол</div>
+                <div class="reserve__table" data-table="5">5 стол</div>
+                <div class="reserve__table" data-table="6">6 стол</div>
+                <div class="reserve__table" data-table="7">7 стол</div>
+                <div class="reserve__table" data-table="8">8 стол</div>
+                <div class="reserve__table" data-table="9">9 стол</div>
+                <div class="reserve__table" data-table="10">10 стол</div>
+                <div class="reserve__table" data-table="11">11 стол</div>
+              </div>
+              
+              <!-- Центральная часть -->
+              <div class="reserve__scheme-center">
+                <div class="reserve__scene">Сцена</div>
+                
+                <div class="reserve__tables-grid">
+                  <div class="reserve__table-grid" data-table="10">10</div>
+                  <div class="reserve__table-grid" data-table="9">9</div>
+                  
+                  <div class="reserve__dancefloor">Танцпол</div>
+                  
+                  <div class="reserve__table-grid" data-table="8">8</div>
+                  <div class="reserve__table-grid" data-table="7">7</div>
+                  <div class="reserve__table-grid" data-table="4">4</div>
+                  <div class="reserve__table-grid" data-table="3">3</div>
+                  <div class="reserve__table-grid" data-table="5">5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reserve__order">
+            <div class="reserve__tickets">
+              <h4 class="reserve__subtitle">Ваши пригласительные билеты</h4>
+              
+              <div class="reserve__ticket-group">
+                <div class="reserve__ticket-info">
+                  <span class="reserve__ticket-count">9 шт.</span>
+                  <span class="reserve__ticket-price">1400 ₽</span>
+                </div>
+                <div class="reserve__ticket-total">12 600 ₽</div>
+              </div>
+              
+              <div class="reserve__ticket-group">
+                <div class="reserve__ticket-info">
+                  <span class="reserve__ticket-count">4 шт.</span>
+                  <span class="reserve__ticket-price">1250 ₽</span>
+                </div>
+                <div class="reserve__ticket-total">5000 ₽</div>
+              </div>
+              
+              <div class="reserve__total">
+                <span class="reserve__total-label">Сумма</span>
+                <span class="reserve__total-amount">17 600 ₽</span>
+              </div>
+              
+              <button type="submit" class="reserve__submit button">Купить билеты</button>
+            </div>
+            
+            <div class="reserve__prices">
+              <h4 class="reserve__subtitle">Стоимость пригласительного билета</h4>
+              <div class="reserve__price-item">
+                <span class="reserve__price">1400 ₽</span>
+                <span class="reserve__price-desc">1 персона</span>
+              </div>
+              <div class="reserve__price-item">
+                <span class="reserve__price">1250 ₽</span>
+                <span class="reserve__price-desc">1 персона</span>
+              </div>
+            </div>
+            
+            <div class="reserve__legend">
+              <h4 class="reserve__subtitle">Примечание</h4>
+              <ul class="reserve__legend-list">
+                <li class="reserve__legend-item">
+                  <span class="reserve__legend-color reserve__legend-color--available"></span>
+                  <span class="reserve__legend-text">доступные места</span>
+                </li>
+                <li class="reserve__legend-item">
+                  <span class="reserve__legend-color reserve__legend-color--booked"></span>
+                  <span class="reserve__legend-text">забронировано</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+      </article>
+    </main>
+        
+    @@include('blocks/page-footer.html')
+    @@include('blocks/event-pp.html')
+  </body>
+</html>

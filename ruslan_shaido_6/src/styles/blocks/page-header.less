@@ -1,0 +1,43 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 147px;
+  background-color: rgb(222, 222, 222, 0.5);
+  backdrop-filter: blur(20px);
+  z-index: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &__container{
+    .container();
+  }
+  &__logo{
+    width: 202px;
+    height: 147px;
+    font-size: 0;
+    text-decoration: none;
+
+  }
+  &__logo-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__nav{
+    display: flex;
+    gap: 50px;
+  }
+  &__nav-link{
+    color: @black;
+    font-weight: 600;
+    font-size: 1.38;
+    line-height: 25px;
+  }
+
+}
