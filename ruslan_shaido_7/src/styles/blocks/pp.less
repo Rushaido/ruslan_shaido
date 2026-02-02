@@ -1,0 +1,115 @@
+.pp {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  min-width: 1200px;
+  padding: 90px 40px 50px;
+  background-color: fade(@black, 40%);
+  backdrop-filter: blur(20px);
+  // Убран overflow-y: auto - теперь нет скролла
+  overflow: hidden; // или overflow: visible
+  z-index: 10010;
+  display: flex;
+
+  &__wrapper {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1210px;
+    margin: auto;
+    background-color: @gray;
+    background-position: 0 0;
+    background-size: auto;
+    background-repeat: repeat;
+  }
+  &__container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+  }
+
+  &__title {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: -40px 0 70px -85px;
+    padding: 10px 85px;
+    width: 595px;
+    min-height: 80px;
+    background-color: @black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: @font2;
+    font-size: 22px;
+    line-height: 1.36;
+    color: @white;
+    letter-spacing: 0.02em;
+    z-index: 1;
+  }
+  &__sticky-close {
+    position: sticky;
+    top: 0;
+    align-self: flex-end;
+    width: 0;
+    height: 0;
+  }
+  &__x-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+  }
+}
+
+// Дополнительные стили для элементов формы (если нужно их добавить в этот же файл)
+.date-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+  &__day,
+  &__month {
+    width: 55px;
+    height: 55px;
+    
+    input {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  
+  &__year {
+    width: 110px;
+    height: 55px;
+    
+    input {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+
+.wishes-area {
+  width: 870px;
+  height: 149px;
+  margin-top: 20px;
+  
+  textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    resize: none; // чтобы нельзя было менять размер
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
