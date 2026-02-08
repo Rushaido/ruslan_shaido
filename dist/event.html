@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Lenni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="body">
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="#" class="page-header__logo">
+        <svg class="page-header__logo-icon" width="202" height="147" viewBox="0 0 202 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="147" height="147" fill="#1F1E1E" />
+          <path d="M39.9655 72.439H26.6335V50.032H26.6005V49.999H21.9145V73H39.9655V72.439Z" fill="white" />
+          <path d="M43.9316 73H62.0486V72.439H48.6176V61.285H59.1116V60.691H48.6176V50.56H62.0486V49.999H43.9316V73Z" fill="white" />
+          <path d="M70.6993 73V50.56C73.5703 50.56 82.4143 51.649 83.0743 64.453V73H87.7603V49.999H83.0743V60.328C81.6553 54.19 77.1673 49.999 70.6993 49.999H66.0133V73H70.6993Z" fill="white" />
+          <path d="M97.3893 73V50.56C100.26 50.56 109.104 51.649 109.764 64.453V73H114.45V49.999H109.764V60.328C108.345 54.19 103.857 49.999 97.3893 49.999H92.7033V73H97.3893Z" fill="white" />
+          <path d="M119.393 73H124.079V49.999H119.393V73Z" fill="white" />
+          <rect x="81" y="92" width="121" height="42" fill="#BC3324" />
+          <path d="M108.922 124H109.462L112.402 115.45H120.952L124.282 124H128.752L120.652 103.09H116.122L108.922 124ZM116.422 103.75L120.772 114.94H112.582L116.422 103.75Z" fill="white" />
+          <path d="M132.644 103.09V124H136.904V116.77H141.974L146.864 123.97H151.724L146.564 116.32C149.564 115.54 151.844 113.68 151.844 109.51C151.844 104.29 148.034 102.64 143.594 102.64C138.914 102.64 137.564 106.15 136.904 110.05V103.09H132.644ZM138.074 107.47C138.884 104.53 140.984 103.33 142.844 103.18C147.314 102.76 147.494 105.61 147.494 109.51C147.494 115.84 144.134 116.26 141.254 116.26H136.904C136.904 116.26 136.784 112.12 138.074 107.47Z" fill="white" />
+          <path d="M162.084 103.6L162.114 124H166.374V103.6H174.984V103.09H153.474V103.6H162.084Z" fill="white" />
+        </svg>
+      </a>
+
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="#1f1e1e" fill="transparent">
+                <path d="M10 17L15 12L10 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 12H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.3 9.22C11.8336 8.75813 12.2616 8.18688 12.5549 7.54502C12.8482 6.90316 13 6.20571 13 5.5C13 4.17392 12.4732 2.90215 11.5355 1.96447C10.5979 1.02678 9.32608 0.5 8 0.5C6.67392 0.5 5.40215 1.02678 4.46447 1.96447C3.52678 2.90215 3 4.17392 3 5.5C2.99999 6.20571 3.1518 6.90316 3.44513 7.54502C3.73845 8.18688 4.16642 8.75813 4.7 9.22C3.30014 9.85388 2.11247 10.8775 1.27898 12.1685C0.445495 13.4596 0.00147185 14.9633 0 16.5C0 16.7652 0.105357 17.0196 0.292893 17.2071C0.48043 17.3946 0.734784 17.5 1 17.5C1.26522 17.5 1.51957 17.3946 1.70711 17.2071C1.89464 17.0196 2 16.7652 2 16.5C2 14.9087 2.63214 13.3826 3.75736 12.2574C4.88258 11.1321 6.4087 10.5 8 10.5C9.5913 10.5 11.1174 11.1321 12.2426 12.2574C13.3679 13.3826 14 14.9087 14 16.5C14 16.7652 14.1054 17.0196 14.2929 17.2071C14.4804 17.3946 14.7348 17.5 15 17.5C15.2652 17.5 15.5196 17.3946 15.7071 17.2071C15.8946 17.0196 16 16.7652 16 16.5C15.9985 14.9633 15.5545 13.4596 14.721 12.1685C13.8875 10.8775 12.6999 9.85388 11.3 9.22ZM8 8.5C7.40666 8.5 6.82664 8.32405 6.33329 7.99441C5.83994 7.66476 5.45542 7.19623 5.22836 6.64805C5.0013 6.09987 4.94189 5.49667 5.05764 4.91473C5.1734 4.33279 5.45912 3.79824 5.87868 3.37868C6.29824 2.95912 6.83279 2.6734 7.41473 2.55764C7.99667 2.44189 8.59987 2.5013 9.14805 2.72836C9.69623 2.95542 10.1648 3.33994 10.4944 3.83329C10.8241 4.32664 11 4.90666 11 5.5C11 6.29565 10.6839 7.05871 10.1213 7.62132C9.55871 8.18393 8.79565 8.5 8 8.5ZM19.71 6.13C19.617 6.03627 19.5064 5.96188 19.3846 5.91111C19.2627 5.86034 19.132 5.8342 19 5.8342C18.868 5.8342 18.7373 5.86034 18.6154 5.91111C18.4936 5.96188 18.383 6.03627 18.29 6.13L16.29 8.13L15.67 7.5C15.577 7.40627 15.4664 7.33188 15.3446 7.28111C15.2227 7.23034 15.092 7.2042 14.96 7.2042C14.828 7.2042 14.6973 7.23034 14.5754 7.28111C14.4536 7.33188 14.343 7.40627 14.25 7.5C14.0637 7.68736 13.9592 7.94081 13.9592 8.205C13.9592 8.46919 14.0637 8.72264 14.25 8.91L15.59 10.25C15.7774 10.4363 16.0308 10.5408 16.295 10.5408C16.5592 10.5408 16.8126 10.4363 17 10.25L19.67 7.58C19.771 7.48932 19.8524 7.37904 19.9094 7.25588C19.9664 7.13272 19.9977 6.99924 20.0014 6.86359C20.0052 6.72794 19.9813 6.59294 19.9312 6.46682C19.8811 6.34071 19.8058 6.22611 19.71 6.13Z" fill="#1f1e1e" />
+          </svg>
+        </a>
+
+        <button type="button" class="page-header__nav-toggle"></button>
+      </div>
+
+  </header>
+  </div>
+
+
+  <main class="main">
+
+    <article class="event">
+
+      <div class="event__content content">
+        <h2>Программа мероприятия</h2>
+        <ul>
+          <li>20:15 – Приветствие гостей</li>
+          <li>20:30 – Первая подача блюд | Салаты</li>
+          <li>20:40 – Живой вокал | Композиции 1-3</li>
+          <li>21:20 – Подача горячих блюд</li>
+          <li>21:30 – Живой вокал | Композиции 4-7</li>
+          <li>22:15 – Подача десерта</li>
+          <li>22:30 – Живой вокал | Композиции 8-9</li>
+          <li>23:00 – Завершение вечера</li>
+        </ul>
+        <h2>The Best Of Sade</h2>
+      </div>
+      <p>
+        Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
+        включая самые
+        <br>популярные хиты группы, раритеты и их любимые треки.
+      </p>
+      <p>
+        Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+        <br>
+        Она лидировала музыкальных чартах с 1994 по 1995 год,
+        став четырехкратно платиновой в США и продав
+        <br> более 2 миллионов копий в Европе.
+      </p>
+
+      <ol>
+        <li>Your Love Is King</li>
+        <li>Hang On To Your Love</li>
+        <li>Smooth Operator</li>
+        <li>Jezebel</li>
+        <li>The Sweetest Taboo</li>
+        <li>Is It A Crime</li>
+        <li>Never As Good As The First Time</li>
+        <li>Love Is Stronger Than Pride</li>
+        <li>Paradise</li>
+      </ol>
+
+      <form class="reserve">
+        <div class="reserve__checks">
+          <h2 class="reserve__section-title">
+            Забронировать столик
+          </h2>
+
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">1 стол</span>
+          </label>
+
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">2 стол</span>
+          </label>
+
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">3 стол</span>
+          </label>
+
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">4 стол</span>
+          </label>
+
+          <label class="reserve__check check check--disabled">
+            <input type="checkbox" name="table_5" class="check__input" disabled />
+            <span class="check__mark"></span>
+            <span class="check__label">5 стол </span>
+          </label>
+
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">6 стол</span>
+          </label>
+
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">7 стол</span>
+          </label>
+
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">8 стол</span>
+          </label>
+
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">9 стол</span>
+          </label>
+
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">10 стол</span>
+          </label>
+
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">11 стол</span>
+          </label>
+
+        </div>
+
+        <div class="reserve__scheme">
+          <div class="reserve__scheme-container">
+            <h2 class="reserve__scheme-title">Сцена</h2>
+
+            <div class="reserve__scheme-wrapper">
+              <svg class="reserve__scene scene" width="780" height="399" viewBox="0 0 780 399" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="assets/icons/symbols.svg#map-table">
+                </use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="reserve__order">
+          <h2 class="reserve__section-title">Ваши пригласительные билеты</h2>
+          <div class="reserve__tickets-list">
+            <div class="reserve__tickets">
+              <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
+              <div class="reserve__sum">0</div>
+            </div>
+            <div class="reserve__tickets">
+              <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
+              <div class="reserve__sum">0</div>
+            </div>
+          </div>
+          <div class="reserve__total" data-caption="Сумма">0</div>
+          <button type="submit" class="btn btn--red reserve__submit">
+            Купить билеты
+          </button>
+        </div>
+
+
+        <div class="reserve__legend">
+          <h2 class="reserve__section-title">Стоимость пригласительного билета</h2>
+          <div class="reserve__tickets-list">
+            <div class="reserve__tickets">
+              <div class="reserve__qty2" data-caption="1 персона" data-price="1400"></div>
+            </div>
+            <div class="reserve__tickets">
+              <div class="reserve__qty2" data-caption="1 персона" data-price="1250"></div>
+            </div>
+          </div>
+          <h2 class="reserve__section-title">Примечание</h2>
+          <div class="reserve__tickets-list">
+            <div class="reserve__text">доступные места
+            </div>
+            <div class="reserve__text">забронировано
+            </div>
+          </div>
+        </div>
+
+        <!-- Прочие элементы формы -->
+
+
+      </form>
+
+    </article>
+  </main>
+
+  <!DOCTYPE html>
+  <html lang="ru">
+  <footer class="page-footer"></footer>
+
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.40864 5.99915L11.7045 1.71268C11.8926 1.52453 11.9983 1.26935 11.9983 1.00326C11.9983 0.737183 11.8926 0.481998 11.7045 0.29385C11.5164 0.105701 11.2612 0 10.9952 0C10.7291 0 10.474 0.105701 10.2859 0.29385L6 4.59031L1.71414 0.29385C1.52602 0.105701 1.27087 -1.98247e-09 1.00483 0C0.738783 1.98247e-09 0.483635 0.105701 0.295513 0.29385C0.107391 0.481998 0.00170495 0.737183 0.00170495 1.00326C0.00170495 1.26935 0.107391 1.52453 0.295513 1.71268L4.59136 5.99915L0.295513 10.2856C0.201875 10.3785 0.127553 10.489 0.0768329 10.6108C0.0261132 10.7325 0 10.8631 0 10.995C0 11.1269 0.0261132 11.2575 0.0768329 11.3793C0.127553 11.501 0.201875 11.6116 0.295513 11.7044C0.388386 11.7981 0.49888 11.8724 0.620622 11.9232C0.742363 11.9739 0.872943 12 1.00483 12C1.13671 12 1.26729 11.9739 1.38903 11.9232C1.51077 11.8724 1.62127 11.7981 1.71414 11.7044L6 7.40799L10.2859 11.7044C10.3787 11.7981 10.4892 11.8724 10.611 11.9232C10.7327 11.9739 10.8633 12 10.9952 12C11.1271 12 11.2576 11.9739 11.3794 11.9232C11.5011 11.8724 11.6116 11.7981 11.7045 11.7044C11.7981 11.6116 11.8724 11.501 11.9232 11.3793C11.9739 11.2575 12 11.1269 12 10.995C12 10.8631 11.9739 10.7325 11.9232 10.6108C11.8724 10.489 11.7981 10.3785 11.7045 10.2856L7.40864 5.99915Z" fill="white" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+
+        <form class="pp__form form">
+          <div class="form__list">
+            <div class="field form__field form__field--w50">
+              <h4 class="field__title">Формат мероприятия:</h6>
+
+                <div class="field__radio radio">
+                  <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="seminar" checked />
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Мастер-класс/семинар</span>
+                  </label>
+
+                  <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="concert" />
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Концерт/выступление</span>
+                  </label>
+
+                  <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="show" />
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Выставка/показ</span>
+                  </label>
+
+                  <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="other" />
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Другое</span>
+                  </label>
+                </div>
+            </div>
+
+            <div class="form__group form__group--w50">
+              <div class="form__field field">
+                <h4 class="field__title">Планируемое количество посетителей:</h6>
+
+                  <select class="field__select" placeholder="Выберите планируемое число посетителей" name="amount">
+                    <option value="20">до 20 человек</option>
+                    <option value="100">от 20 до 100 человек</option>
+                    <option value="500">от 100 до 500 человек</option>
+                    <option value="1000">более 500 человек</option>
+                  </select>
+              </div>
+
+              <div class="form__field field">
+                <h4 class="field__title">Дата проведения:</h6>
+
+                  <div class="field__date-inputs">
+                    <input class="field__date-input" type="text" placeholder="ДД" />
+                    <input class="field__date-input" type="text" placeholder="ММ" />
+                    <input class="field__date-input field__date-input--year" type="text" placeholder="ГГГГ" />
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <h4 class="form__section-title">Контакные данные:</h6>
+
+              <div class="form__list">
+                <label class="field form__field form__field--w50">
+                  <span class="field__label">Имя*</span>
+                  <input class="field__input" type="text" placeholder="Имя" name="name" required />
+                </label>
+
+                <label class="field form__field form__field--w50">
+                  <span class="field__label">Фамилия*</span>
+                  <input class="field__input" type="text" placeholder="Фамилия" name="last_name" required />
+                </label>
+
+                <label class="field form__field form__field--w50">
+                  <span class="field__label">Телефон*</span>
+                  <input class="field__input" type="tel" placeholder="Телефон" name="phone" required />
+                </label>
+
+                <label class="field form__field form__field--w50">
+                  <span class="field__label">Email *</span>
+                  <input class="field__input" type="email" placeholder="Email" name="email" required />
+                </label>
+              </div>
+          </div>
+
+          <label class="field form__field">
+            <span class="field__title">Есть пожелания? Напишите&nbsp;нам:</span>
+            <textarea class="field__textarea" type="text" name="Пожелания"></textarea>
+          </label>
+
+          <div class="form__check-list">
+            <label class="form__check check">
+              <input type="checkbox" name="agree" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                Я соглашаюсь с пользовательским соглашением и с политикой
+                использования персональных данных
+              </span>
+            </label>
+          </div>
+
+          <div class="form__btns">
+            <button type="submit" class="btn form__submit form__submit--w50">
+              Отправить
+            </button>
+
+            <button type="button" class="form__close-btn">
+              Закрыть
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/reserve.js"></script>
+</body>
+
+</html>
