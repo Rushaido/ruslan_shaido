@@ -1,0 +1,46 @@
+<section class="listing home_listing">
+    <h2 class="listing__section-title section-title">Блог</h2>
+    <div class="listing__container">
+        <div class="listing__article-list">
+            @@loop('article-card.html', [
+                {
+                    "class": "listing__article-card",
+                    "img": "assets/images/blog/theatre.jpg",
+                    "img_webp": "assets/images/blog/theatre.webp",
+                    "img_tablet": "assets/images/blog/theatre_tablet.jpg",
+                    "img_tablet_webp": "assets/images/blog/theatre_tablet.webp",
+                    "alt": "Theatre Photosession",
+                    "title": "Фотосессия в стенах Театра драмы",
+                    "descr": "Организовывая фотосессию для Европейского культурного центра в здании бывшего Театра драмы...",
+                    "time": "26.11.2024",
+                    "datetime": "2024-11-26T00:00"
+                },
+                {
+                    "class": "listing__article-card",
+                    "img": "assets/images/blog/concert.jpg",
+                    "img_webp": "assets/images/blog/concert.webp",
+                    "img_tablet": "assets/images/blog/concert_tablet.jpg",
+                    "img_tablet_webp": "assets/images/blog/concert_tablet.webp",
+                    "alt": "Concert Performance",
+                    "title": "Выставка VR в Томске",
+                    "descr": "Ключевые технологии в партнерстве с командой томского музея...",
+                    "time": "15.11.2024",
+                    "datetime": "2024-11-15T00:00"
+                },
+                {
+                    "class": "listing__article-card",
+                    "img": "assets/images/blog/guitar.jpg",
+                    "img_webp": "assets/images/blog/guitar.webp",
+                    "img_tablet": "assets/images/blog/guitar_tablet.jpg",
+                    "img_tablet_webp": "assets/images/blog/guitar_tablet.webp",
+                    "alt": "Guitar Workshop",
+                    "title": "Мастер-класс по игре на гитаре",
+                    "descr": "Освоите технику игры и аккорды под руководством опытных музыкантов...",
+                    "time": "05.10.2024",
+                    "datetime": "2024-10-05T00:00"
+                }
+            ])
+        </div>
+    </div>
+    <a href="#" class="upcoming__link link">Смотреть все</a>
+</section>

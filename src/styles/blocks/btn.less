@@ -2,12 +2,12 @@
   display: inline-flex;
   box-sizing: border-box;
   padding: 15px 40px;
-  border: 1px solid @black;
+  border: 2px solid @black;
   text-decoration: none;
   background-color: transparent;
   outline: none;
   color: @black;
-  font-family: Open Sans, sans-serif;
+  font-family: Open Sans, SemiBold;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.375;
@@ -20,11 +20,15 @@
     background-color: @black;
     color: @white;
   }
+   &__icon {
+    pointer-events: none;
+  }
 }
 .btn--red {
     background-color: @red;
     color: white;
     border: none;
+    font-family: Open Sans, SemiBold;
 }
 
 .btn--red:hover {

@@ -39,6 +39,7 @@
     align-items: center;
     z-index: 1;
   }
+  
   &__logo {
     position: relative;
     flex-shrink: 0;
@@ -56,15 +57,18 @@
       height: 70px;
     }
   }
+  
   &__logo-icon {
     width: 100%;
     height: 100%;
   }
+  
   &__nav {
     box-sizing: border-box;
     display: flex;
     align-items: baseline;
     margin: 0 auto;
+    
     @media @bw1020 {
       position: absolute;
       left: 0;
@@ -83,11 +87,17 @@
         background-color: fade(@gray, 70%);
         backdrop-filter: blur(20px);
       }
+      
+      .show-nav & {
+        transform: translateX(0);
+      }
     }
+    
     @media @bw768 {
       padding: 150px 20px 30px;
     }
   }
+  
   &__nav-link,
   &__nav-user-link {
     color: @black;
@@ -96,6 +106,7 @@
       color: @red_dark;
     }
   }
+  
   &__nav-link {
     margin: 0 25px;
     font-weight: 600;
@@ -109,6 +120,7 @@
       line-height: 22px;
     }
   }
+  
   &__nav-user {
     display: none;
     @media @bw1020 {
@@ -117,17 +129,20 @@
       margin-top: 20px;
     }
   }
+  
   &__nav-user-link {
     margin-right: 25px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
   }
+  
   &__nav-logout {
     width: 24px;
     height: 24px;
     font-size: 0;
   }
+  
   &__right-block {
     position: relative;
     display: flex;
@@ -143,6 +158,7 @@
       margin-left: auto;
     }
   }
+  
   &__user-btn {
     max-width: 100%;
     display: inline-block;
@@ -179,6 +195,7 @@
       }
     }
   }
+  
   &__user-icon {
     display: none;
     @media @bw1020 {
@@ -186,6 +203,7 @@
       margin: auto;
     }
   }
+  
   &__nav-toggle {
     display: none;
     @media @bw1020 {
@@ -198,10 +216,12 @@
       border: none;
       background: none;
       cursor: pointer;
+      z-index: 2;
     }
     @media @bw768 {
       margin-left: 5px;
     }
+    
     &::before,
     &::after {
       content: "";
@@ -213,13 +233,30 @@
       height: 2px;
       border-radius: 2px;
       background-color: @black;
+      transition: transform 0.3s, top 0.3s, box-shadow 0.3s;
     }
+    
     &::before {
       top: 13px;
       box-shadow: 0 6px 0 @black;
     }
+    
     &::after {
       top: 25px;
     }
+    
+    .show-nav & {
+      &::before {
+        top: 19px;
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+      
+      &::after {
+        top: 19px;
+        transform: rotate(-45deg);
+      }
+    }
   }
+  
 }

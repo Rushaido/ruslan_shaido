@@ -40,9 +40,12 @@
     overflow: hidden;
   }
 
-  #eventPP {
+  #js-eventPP {
     display: flex;
   }
+}
+.pp-overflow{
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -72,4 +75,28 @@
 .grid-center() {
   display: grid;
   place-items: center;
+}
+
+.show-nav {
+  body {
+    @media @bw1020 {
+      overflow: hidden;
+    }
+  }
+
+  .page-header__nav {
+    @media @bw1020 {
+      transform: translateX(0);
+    }
+  }
+
+  .page-header__nav-toggle {
+    &::before {
+      transform: translate(0px, 6px) rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      transform: translate(0px, -6px) rotate(-45deg);
+    }
+  }
 }
