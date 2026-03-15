@@ -43,6 +43,7 @@
 
 <body class="body">
 
+
   <header class="page-header">
     <div class="page-header__container">
       <a href="#" class="page-header__logo">
@@ -103,6 +104,34 @@
     <article class="event">
 
       <div class="event__content content">
+        <div class="content__breadcrumbs">
+          Главная / Мероприятия / Вечер | The Best of Sade
+        </div>
+
+        <h1 class="content__title">Вечер | The Best of Sade</h1>
+
+        <div class="content__event-info">
+          <div class="content__event-date">
+            <h5>
+              <span class="event-number">16/12/2022</span>
+              <br>
+              <span class="event-place">Кафе «Птичка»</span>
+            </h5>
+          </div>
+
+          <picture class="content__event-picture">
+            <img class="content__event-img" src="assets/images/card3.svg" alt="card" />
+          </picture>
+
+          <div class="content__event-time">
+            <h5>
+              <span class="event-number">20.00 начало</span>
+              <br>
+              <span class="event-place">Ленина 10 | 2 этаж</span>
+            </h5>
+          </div>
+        </div>
+
         <h2>Программа мероприятия</h2>
         <ul>
           <li>20:15 – Приветствие гостей</li>
@@ -114,34 +143,41 @@
           <li>22:30 – Живой вокал | Композиции 8-9</li>
           <li>23:00 – Завершение вечера</li>
         </ul>
+
         <h2>The Best Of Sade</h2>
+
+        <p>
+          Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
+          включая самые популярные хиты группы, раритеты и их любимые треки.
+        </p>
+        <p>
+          Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+          Она лидировала музыкальных чартах с 1994 по 1995 год,
+          став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+        </p>
+
+        <ol>
+          <li>Your Love Is King</li>
+          <li>Hang On To Your Love</li>
+          <li>Smooth Operator</li>
+          <li>Jezebel</li>
+          <li>The Sweetest Taboo</li>
+          <li>Is It A Crime</li>
+          <li>Never As Good As The First Time</li>
+          <li>Love Is Stronger Than Pride</li>
+          <li>Paradise</li>
+        </ol>
       </div>
-      <p>
-        Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
-        включая самые
-        <br>популярные хиты группы, раритеты и их любимые треки.
-      </p>
-      <p>
-        Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
-        <br>
-        Она лидировала музыкальных чартах с 1994 по 1995 год,
-        став четырехкратно платиновой в США и продав
-        <br> более 2 миллионов копий в Европе.
-      </p>
-
-      <ol>
-        <li>Your Love Is King</li>
-        <li>Hang On To Your Love</li>
-        <li>Smooth Operator</li>
-        <li>Jezebel</li>
-        <li>The Sweetest Taboo</li>
-        <li>Is It A Crime</li>
-        <li>Never As Good As The First Time</li>
-        <li>Love Is Stronger Than Pride</li>
-        <li>Paradise</li>
-      </ol>
-
       <form class="reserve">
+        <button id="js-navToggle" style="display: none;" aria-hidden="true"></button>
+
+        <div id="js-eventPP" style="display: none;" aria-hidden="true">
+          <button class="js-ppCloseBtn" style="display: none;"></button>
+        </div>
+
+        <button id="js-eventOpenBtn" style="display: none;" aria-hidden="true"></button>
+
+        <div id="js-contactsMap" style="display: none;" aria-hidden="true"></div>
         <div class="reserve__checks">
           <h2 class="reserve__section-title">
             Забронировать столик
@@ -266,12 +302,12 @@
           </div>
         </div>
 
-        <!-- Прочие элементы формы -->
 
 
       </form>
 
     </article>
+
   </main>
 
   <footer class="page-footer">
@@ -467,11 +503,22 @@
   </div>
 
 
-  <script src="scripts/jquery-4.0.0.min.js"></script>
-  <script src="scripts/reserve.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/query.mask.min.js"></script>
+  <script src="scripts/air-datepicker.min.js"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+
+  <script src="scripts/reserve.js"></script>
+
   <script src="scripts/jquery.validate.js"></script>
   <script src="scripts/jquery.validate-init.js"></script>
+
+  <script src="scripts/swiper.min.js"></script>
+
   <script src="scripts/main.min.js"></script>
 </body>
 

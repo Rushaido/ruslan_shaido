@@ -116,7 +116,6 @@
     text-decoration: none;
     transition: color 0.2s;
     
-    
     &:hover {
       color: @red;
     }
@@ -143,6 +142,52 @@
       height: 1px;
       background-color: @black;
       pointer-events: none;
+    }
+  }
+
+  // Медиазапрос для 1020px
+  @media @bw1020 {
+    display: flex;
+    flex-direction: column;
+    
+    &__link {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    
+    &__info {
+      padding: 0;
+      position: relative;
+    }
+    
+    &__time {
+      margin: 0 0 40px;
+      text-align: left;
+    }
+    
+    &__title-link {
+      margin: 0 0 20px 0;
+      max-width: 100%;
+    }
+    
+    &__description {
+      max-width: calc(100% - 120px);
+      margin: 0;
+      position: relative;
+    }
+    
+    &__arrow {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(50%);
+      width: 92px;
+      height: 60px;
+    }
+    
+    & + .article-card {
+      margin-top: 80px;
     }
   }
 }

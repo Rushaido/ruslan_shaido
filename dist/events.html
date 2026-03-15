@@ -192,7 +192,19 @@
                 27.12.2022 | начало 10.00</time>
             </a>
           </article>
+
         </div>
+        <div class="event-card__more">
+          <a href="#" class="event-card__more-link">
+            показать ещё
+            <span class="event-card__more-arrow arrow">
+              <svg class="arrow__icon" width="91" height="60">
+                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -230,7 +242,7 @@
                 </span>
               </a>
               <p class="article-card__description">
-                Организовывая фотосессию для Европейского культурного центра в здании бывшего Театра драмы...
+                Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было
               </p>
             </div>
           </article>
@@ -264,7 +276,7 @@
                 </span>
               </a>
               <p class="article-card__description">
-                Ключевые технологии в партнерстве с командой томского музея...
+                Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.
               </p>
             </div>
           </article>
@@ -289,7 +301,7 @@
               </time>
               <a href="#" class="article-card__title-link">
                 <h4 class="article-card__title">
-                  Мастер-класс по игре на гитаре
+                  Rocking radio в заброшенном ангаре
                 </h4>
                 <span class="article-card__arrow arrow">
                   <svg class="arrow__icon" width="91" height="60">
@@ -298,7 +310,7 @@
                 </span>
               </a>
               <p class="article-card__description">
-                Освоите технику игры и аккорды под руководством опытных музыкантов...
+                15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.
               </p>
             </div>
           </article>
@@ -310,7 +322,7 @@
     <section class="events__services">
 
       <div class="section-title3">
-        <h2 class="listings__title section-title3">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+        <h2 class="listing__section-title section-title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
       </div>
       <p class="events__section-description">
         Перед запуском проекта, мы подготавливаем подробную смету и согласуем
@@ -422,6 +434,66 @@
         </tfoot>
       </table>
     </section>
+    <section class="offers home__offers">
+      <h4 class="offers__title">Я ХОЧУ: </h4>
+
+      <div class="offers__btns">
+        <button class="offers__btn btn--red" type="button" id="js-eventOpenBtn">
+          Провести мероприятие
+        </button>
+
+        <button class="offers__btn btn" type="button">
+          Стать арендатором
+        </button>
+      </div>
+    </section>
+    <div class="info @@class">
+      <div class="info-item info-item--column">
+        <div class="info-item__wrap-icon">
+          <svg class="info-item__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#warning"></use>
+          </svg>
+        </div>
+        <div class="info-item__info">
+          <h4 class="info-item__title">Цены</h4>
+          <p class="info-item__text">Цены, указанные на сайте носят
+            <br>
+            информационный характер. Мы придерживаемся
+            <br> индивидуального
+            подхода в работе с клиентом.
+          </p>
+        </div>
+      </div>
+      <div class="info-item info-item--column">
+        <div class="info-item__wrap-icon">
+          <svg class="info-item__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#phone"></use>
+          </svg>
+        </div>
+        <div class="info-item__info">
+          <h4 class="info-item__title">Контакты</h4>
+          <p class="info-item__text">Отдел организации мероприятий </p>
+          <a href="tel:74993500730" class="info-item__text">+7 499 350 0730</a>
+          <a href="mailto:hi@tagree.ru" class="info-item__text">hi@tagree.ru</a>
+        </div>
+      </div>
+      <div class="info-item info-item--column">
+        <div class="info-item__wrap-icon">
+          <svg class="info-item__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#hands"></use>
+          </svg>
+        </div>
+        <div class="info-item__info">
+          <h4 class="info-item__title">Преимущество</h4>
+          <p class="info-item__text">Мы имеем все возможности для
+            того, чтобы
+            <br> помочь как малому бизнесу и молодым талантам,
+            <br>
+            так и большим корпорациям и холдингам.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -616,8 +688,19 @@
       </div>
     </div>
   </div>
-  <script src="scripts/jquery-4.0.0.min.js"></script>
-  <script src="scripts/main.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/query.mask.min.js"></script>
+  <script src="scripts/air-datepicker.min.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
+
+  <script src="scripts/swiper.min.js"></script>
+
 </body>
 
 </html>

@@ -15,13 +15,26 @@
       
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
-      @@include('blocks/table.html')            
+      @@include('blocks/table.html', {"class": "home__table"})
+      @@include('blocks/offers.html', {"class": "home__offers"})
+      @@include('blocks/info.html')
       
     </main>
         
     @@include('blocks/page-footer.html')
     @@include('blocks/event-pp.html')
-    <script src="scripts/jquery-4.0.0.min.js"></script>
-    <script src="scripts/main.min.js"></script> 
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+
+    <script src="scripts/jquery.selectric.min.js"></script>
+    <script src="scripts/query.mask.min.js"></script>
+    <script src="scripts/air-datepicker.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/jquery.validate-init.js"></script>
+    
+    <script src="scripts/swiper.min.js"></script> 
+
   </body>
 </html>

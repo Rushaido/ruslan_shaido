@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 570, cy: 79, r: 11.5},
           {type: 'circle', cx: 527, cy: 79, r: 11.5}
         ],
-        text: {x: 548, y: 56}
+        text: {x: 549, y: 50}
       },
       
       2: { 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 768, cy: 83, r: 11.5},
           {type: 'circle', cx: 733, cy: 113, r: 11.5}
         ],
-        text: {x: 732, y: 60}
+        text: {x: 733, y: 54}
       },
       
       3: { 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 768, cy: 264, r: 11.5},
           {type: 'circle', cx: 733, cy: 294, r: 11.5}
         ],
-        text: {x: 732, y: 241}
+        text: {x: 733, y: 236}
       },
       
       4: { 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 570, cy: 226, r: 11.5},
           {type: 'circle', cx: 527, cy: 226, r: 11.5}
         ],
-        text: {x: 548, y: 203}
+        text: {x: 548, y: 197}
       },
       
       5: {
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 329, cy: 357, r: 11.5},
           {type: 'circle', cx: 294, cy: 387, r: 11.5}
         ],
-        text: {x: 294, y: 325}
+        text: {x: 294, y: 327}
       },
       
       7: { 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 305, cy: 197, r: 11.5},
           {type: 'circle', cx: 340, cy: 227, r: 11.5}
         ],
-        text: {x: 360, y: 204}
+        text: {x: 362, y: 198}
       },
       
       8: { 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 171, cy: 185, r: 11.5},
           {type: 'circle', cx: 216, cy: 154, r: 11.5}
         ],
-        text: {x: 203, y: 188}
+        text: {x: 216, y: 190}
       },
       
       9: {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 206, cy: 43, r: 11.5},
           {type: 'circle', cx: 251, cy: 12, r: 11.5}
         ],
-        text: {x: 238, y: 46}
+        text: {x: 250, y: 47}
       },
       
       10: {
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 94, cy: 50, r: 11.5},
           {type: 'circle', cx: 94, cy: 16, r: 11.5}
         ],
-        text: {x: 120, y: 85}
+        text: {x: 124, y: 79}
       },
       
       11: { 
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {type: 'circle', cx: 83, cy: 264, r: 11.5},
           {type: 'circle', cx: 48, cy: 294, r: 11.5}
         ],
-        text: {x: 48, y: 241}
+        text: {x: 48, y: 235}
       }
     },
     
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
         group.style.cursor = 'default';
         group.style.pointerEvents = 'none';
         group.style.opacity = '1';
-        
+
         createShapeElements(group, shape, colors, true);
         
         console.log(`   Стол ${tableNum}: СЕРЫЙ, ЗАКРАШЕННЫЙ, ЗАБРОНИРОВАН`);
@@ -307,11 +307,15 @@ document.addEventListener('DOMContentLoaded', function() {
     text.setAttribute('x', textConfig.x);
     text.setAttribute('y', textConfig.y);
     text.setAttribute('fill', '#FFFFFF');
-    text.setAttribute('font-size', '14');
-    text.setAttribute('font-weight', 'bold');
+    text.setAttribute('font-family', 'Open Sans');
+    text.setAttribute('font-size', '19px');
+    text.setAttribute('font-weight', '800');
     text.setAttribute('text-anchor', 'middle');
     text.setAttribute('dominant-baseline', 'middle');
     text.setAttribute('pointer-events', 'none');
+    
+    text.setAttribute('style', 'font-size: 19px !important;');
+    
     text.textContent = tableNum;
     text.className.baseVal = 'table-number-overlay';
     
@@ -530,6 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  
   // 12. Добавление стилей
   function addStyles() {
     if (document.querySelector('#reserve-styles')) return;
@@ -545,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       .table-disabled {
         opacity: 1 !important;
-        filter: grayscale(0.7);
+        filter: grayscale(0.6);
       }
       
       .reserve__total:after,
@@ -556,16 +561,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
       .table-overlay-group .table-number-overlay {
         fill: white !important;
-        font-weight: bold;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 800 !important;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        font-size: 14px !important;
+        font-size: 19px !important;
         pointer-events: none;
       }
       
-      /* Убираем стандартный контур при клике */
       .table-overlay-group *:focus {
         outline: none;
       }
+        
     `;
     document.head.appendChild(style);
   }
@@ -674,8 +680,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const style = document.createElement('style');
       style.textContent = `
-          /* ТОЛЬКО для 320px и меньше - специальный порядок */
-          @media (max-width: 320px) {
+          @media (max-width: 319px) {
               .reserve {
                   grid-template-areas: 
                       "scheme"
@@ -721,8 +726,6 @@ document.addEventListener('DOMContentLoaded', function() {
               }
           }
           
-          /* Важно: НЕ переопределяем padding контейнера */
-          /* Отступы останутся как в .container классе */
       `;
       document.head.appendChild(style);
   }

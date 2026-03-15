@@ -1,55 +1,136 @@
 .contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  
+  @media @bw768 {
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  @media @bw500 {
+    flex-direction: row; 
+    gap: 40px;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  
+  &--column {
+    flex-direction: column;
+    gap: 40px;
+    
+    .contacts-item__title,
+    .contacts-item__text {
+      text-align: center;
+    }
+  }
+  
+  &__wrap-icon {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 54px;
-    &--column {
-        flex-direction: column;
-        gap: 40px;
-        .contacts-item__title,
-        .contacts-item__text {
-            text-align: center;
-        }
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    background-color: @black;
+    color: @red;
+    
+    @media @bw768 {
+      width: 90px;
+      height: 90px;
     }
-    &__wrap-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 110px;
-        height: 110px;
-        background-color: @black;
-        color: @red;
-        @media @bw768 {
-            width: 65px;
-            height: 65px;
-        }
+    
+    @media @bw500 {
+      width: 80px; 
+      margin-left: 20px;
     }
-    &__title {
-        margin: 0 0 10px;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 1.35;
+    
+    @media @bw400 {
+      width: 70px;
+      height: 70px;
     }
-    &__text {
+  }
+  
+  &__icon {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 60%;
+    
+    @media @bw768 {
+      max-width: 50%;
+      max-height: 50%;
+    }
+  }
+  
+  &__title {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.35;
+    white-space: nowrap;
+    
+    @media @bw768 {
+      font-size: 18px;
+      white-space: normal;
+      margin: 0 0 8px;
+    }
+    
+    @media @bw500 {
+      text-align: left;
+      font-size: 18px;
+      
+    }
+  }
+  
+  &__text {
     margin: 0 0 5px;
     color: @black;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
-    &[href] {
-        display: block;
-        text-decoration: none;
-        transition: color 0.2s;
-        &:hover {
-            @media (hover:hover) {
-                color: @red;
-            }
-        }
-        &:active {
-            color: @red;
-        }
-        }
-        &:last-child {
-            margin-bottom: 0;
-        } 
+    white-space: nowrap;
+    
+    @media @bw768 {
+      font-size: 15px;
+      white-space: normal;
+      line-height: 1.4;
     }
+    
+    @media @bw500 {
+      text-align: left;
+      
+      font-size: 15px;
+    }
+    
+    @media @bw400 {
+      font-size: 14px;
+    }
+    
+    &[href] {
+      display: block;
+      text-decoration: none;
+      transition: color 0.2s;
+      
+      &:hover {
+        @media (hover:hover) {
+          color: @red;
+        }
+      }
+      
+      &:active {
+        color: @red;
+      }
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

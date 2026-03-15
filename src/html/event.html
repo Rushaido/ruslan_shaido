@@ -3,6 +3,7 @@
   @@include('blocks/head.html')
 
   <body class="body">
+    
     @@include('blocks/page-header.html')
 
     	
@@ -10,56 +11,33 @@
 
       <article class="event">
 
-        <div class="event__content content">
-          <h2>Программа мероприятия</h2>
-          <ul>
-              <li>20:15 – Приветствие гостей</li>
-              <li>20:30 – Первая подача блюд | Салаты</li>
-              <li>20:40 – Живой вокал | Композиции 1-3</li>
-              <li>21:20 – Подача горячих блюд</li>
-              <li>21:30 – Живой вокал | Композиции 4-7</li>
-              <li>22:15 – Подача десерта</li>
-              <li>22:30 – Живой вокал | Композиции 8-9</li>
-              <li>23:00 – Завершение вечера</li>
-          </ul>
-          <h2>The Best Of Sade</h2>
-        </div>
-        <p>
-          Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
-          включая самые <br>популярные хиты группы, раритеты и их любимые треки.
-        </p>
-        <p>
-          Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.<br>
-          Она лидировала музыкальных чартах с 1994 по 1995 год,
-          став четырехкратно платиновой в США и продав<br> более 2 миллионов копий в Европе.
-        </p>
-
-        <ol>
-          <li>Your Love Is King</li>
-          <li>Hang On To Your Love</li>
-          <li>Smooth Operator</li>
-          <li>Jezebel</li>
-          <li>The Sweetest Taboo</li>
-          <li>Is It A Crime</li>
-          <li>Never As Good As The First Time</li>
-          <li>Love Is Stronger Than Pride</li>
-          <li>Paradise</li>
-        </ol>
-
+        @@include('blocks/event-content.html')
         @@include('blocks/reserve.html')
         
       </article>
+      
     </main>
         
     @@include('blocks/page-footer.html')
     @@include('blocks/event-pp.html')
 
 
-    <script src="scripts/jquery-4.0.0.min.js"></script>
-    <script src="scripts/reserve.js"></script>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+
+    <script src="scripts/jquery.selectric.min.js"></script>
+    <script src="scripts/query.mask.min.js"></script>
+    <script src="scripts/air-datepicker.min.js"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+
+    <script src="scripts/reserve.js"></script>
+    
     <script src="scripts/jquery.validate.js"></script>
     <script src="scripts/jquery.validate-init.js"></script>
+    
+    <script src="scripts/swiper.min.js"></script> 
+
     <script src="scripts/main.min.js"></script> 
   </body>
   
