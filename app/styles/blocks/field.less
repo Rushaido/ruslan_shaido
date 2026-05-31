@@ -1,0 +1,70 @@
+.field {
+  display: flex;
+  flex-direction: column;
+
+  &__input,
+  &__textarea,
+  &__select {
+    box-sizing: border-box;   // Задаём ширину и высоту по краям блока
+    display: block;           // Отображаем как блоки
+    width: 100%;              // Максимально доступная ширина
+    border: none;             // Без краёв
+    background-color: @white;
+    border-radius: 5px;       // Радиус скругления
+    padding: 17px 20px 16px;  // Внутренние отступы для того, чтобы текст не лип к краям
+    line-height: 1.375;
+  }
+
+  &__input,
+  &__select {
+    height: 55px;
+  }
+
+  &__textarea {
+    height: 150px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 5px;       // Нижний внешний отступ, чтобы надпись не липла к input
+    font-size: 16px;          // На всякий случай
+    line-height: 1.3;
+    color: @black;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 0 10px;      // Отступ немного больше, чем в label
+    font-size: 18px;          // Шрифт немного больше, чем в label
+    font-weight: 700;         // Делаем шрифт жирнее
+    line-height: 25px;        // Межстрочный интервал
+    color: @black;
+  }
+
+  &__date-inputs {
+    display: flex;
+    width: 100%;
+	  max-width: 251px;
+    height: 55px;
+  }
+
+  &__date-input {
+    box-sizing: border-box;
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: @white;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+
+    &--year {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+  }
+}

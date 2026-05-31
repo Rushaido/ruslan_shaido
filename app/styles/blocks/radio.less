@@ -1,0 +1,38 @@
+.radio {
+  display: flex;          // Внутри тоже размещаем как flex
+  flex-direction: column;
+  gap: 15px;              // Расстояние между кнопками
+
+  &__item {
+    box-sizing: border-box;
+    position: relative;   // Относительное размещение (внутри потока)
+    padding-left: 46px;   // Оставляем место для "подделки" + отступ от неё
+    min-height: 23px;     // Подпись может быть в несколько строк
+    cursor: pointer;      // Меняем курсор на указатель
+  }
+
+  &__mark {
+    box-sizing: border-box;
+    display: block;       // Делаем блок из строки
+    position: absolute;   // Абсолютное размещение (т.е. без учёта потока)
+    top: 0;               // Крепим "подделку" к верхнему левому краю
+    left: 0;
+    width: 23px;          // Ограничиваем размеры
+    height: 23px;
+    border-radius: 50%;   // Делаем из квадрата круг скруглением границ
+    border: 2px solid @black;   // Делаем чёрное "кольцо" толщиной 2
+    padding: 3px;         // Внутреннее кольцо из отступа
+    background-clip: content-box;   // Будем окрашивать фон без учёта отступов
+    background-color: transparent;  // Изначально фон прозрачный
+    transition: background-color 0.2s;  // Плавный переход
+  }
+
+  &__input {
+    .is-hidden();         // Скрываем реальную кнопку, оставляя функционал
+    &:checked {           // Если выбрана
+      & ~ .radio__mark {  // ~ означает, что для дальнейшего "соседа" выполнится
+        background-color: @black; // Меняем цвет фона
+      }
+    }
+  }
+}

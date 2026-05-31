@@ -1,0 +1,16 @@
+<template>
+  <div class="form__field field">
+    <h6 class="field__title">Планируемое количество посетителей:</h6>
+
+    <select v-model="model" class="field__select" name="amount">
+      <option value="20">до 20 человек</option>
+      <option value="100">от 20 до 100 человек</option>
+      <option value="500">от 100 до 500 человек</option>
+      <option value="1000">более 500 человек</option>
+    </select>
+  </div>
+</template>
+
+<script setup>
+const model = defineModel();
+</script>
